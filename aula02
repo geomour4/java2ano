@@ -55,6 +55,11 @@ multiplicar = multiplicar + 1;
 }}}
 
 2 -
-
-
-
+Scanner tec = new Scanner(System.in);
+System.out.println("Entre com qualquer valor");
+String numero = tec.nextLine();
+int letras = numero.length();
+System.out.println("O valor de letras e: "+letras);
+                
+    }  
+}
