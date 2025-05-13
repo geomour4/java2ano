@@ -1,0 +1,68 @@
+1 -
+package atividade;
+import java.util.Scanner;
+public class atv {
+
+public static void main(String[] args) {
+		
+Scanner tec = new Scanner (System.in);
+
+int ano= 365;
+int mes = 30;
+int dia;
+		 
+System.out.print("Digite a idade em anos: ");
+ano = tec.nextInt();
+
+System.out.print("Digite a idade em meses: ");
+mes = tec.nextInt();
+	        
+System.out.print("Digite a idade em dias: ");
+dia = tec.nextInt();
+
+int totaldias = (ano * 365) + (mes * 30) + dia;
+
+System.out.println("A idade em dias é: " + totaldias);
+		
+}
+}
+
+2-
+package atividade;
+import java.util.Scanner;
+
+public class atv2 {
+public void atv2() {
+
+Scanner tec = new Scanner (System.in);
+
+System.out.println("coloque o valor do IPI");
+int IPI = tec.nextInt();
+System.out.println("coloque o valor  um");
+
+int valor1 = tec.nextInt();
+System.out.println("coloque a quantidade ");
+
+int quant1 = tec.nextInt();
+System.out.println("coloque o valor 2 ");
+
+int valor2 = tec.nextInt();
+System.out.println("coloque a quantidade");
+
+int quant2 = tec.nextInt();
+			
+double result=(valor1*quant1 + valor2*quant2)*(IPI/100 + 1);
+
+System.out.println(result);
+}
+}
+3-
+Scanner tec = new Scanner (System.in);
+
+for (int i = 1; i<= 20; i++){
+	       
+System.out.print("Eu, Davi gosto de estudar Algoritmos!");
+		        
+}
+4-
+    
