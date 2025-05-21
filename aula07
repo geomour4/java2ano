@@ -1,0 +1,78 @@
+1 -
+System.out.println("Insira o valor do raio: ");
+double raio = tec.nextDouble();
+double pi = 3.14;
+double area = pi * (raio*raio);
+System.out.println("A área do circulo é "+area);
+System.out.println("Adicione perímetro: ");
+double perimetro = 2 * pi*raio;
+System.out.println("O valor do perímetro é: "+perimetro);
+}}
+
+2 - 
+System.out.print("Adicione a area desejada: ");
+int larg = tec.nextInt();
+System.out.print("Adicione o perimetro desejado: ");
+int alt = tec.nextInt();
+
+double area = (alt*larg);
+double perimetro = 2*(alt + larg);
+System.out.printInt("Resultado: " + perimetro);
+}}
+
+3 -
+Scanner tec = new Scanner(System.in);
+System.out.println("Para começar, insira o nome do aulo");
+String aluno = tec.nextLine();
+System.out.println("Agora, o número da matrícula");
+int matricula = tec.nextInt();
+System.out.println("Qual a primeira nota?");
+double n1 = tec.nextDouble();
+System.out.println("Qual a segunda nota?");
+double n2 = tec.nextDouble();
+double media = (n2+n1)/2;
+if (media>=7) {
+System.out.println("A média do aluno "+aluno+" da matrícula "+matricula+"ficou com a média "+media+" foi aprovado");
+} else {
+System.out.println("A média do aluno "+aluno+" da matrícula "+matricula+"ficou com a média "+media+" foi reprovado");
+}}}
+
+4 -
+Scanner tec = new Scanner(System.in);
+System.out.println("Antes de tudo, qual seu nome?");
+String nome = tec.nextLine();
+System.out.println("Qual sua idade");
+int idade = tec.nextInt();
+System.out.println("Insira quantas vezes você foi consultado");
+int c = tec.nextInt();
+c = c+1;
+System.out.println("Qual foi a sua ultima consulta?");
+String consulta = tec.nextLine();
+System.out.println("Consulta marcada, o número de consultas agora é: "+c+" a sua ultima consulta é: "+consulta);
+}}
+
+5 -
+Scanner tec = new Scanner(System.in);
+System.out.println("Insira o nome do livro");
+String nome = tec.nextLine();
+System.out.println("Qual o nome do autor?");
+String autor = tec.nextLine();
+System.out.println("Quantidade de paginas");
+int pagina = tec.nextInt();
+System.out.println("Qual o estoque do livro?");
+int estoque = tec.nextInt();
+System.out.println("Para emprestar o livro , digite: 1,  para devolver, digite: 2, para ver estoque, digite: 3");
+int t = tec.nextInt();
+if (t == 1) {
+System.out.println("Ok, para isso, temos que ver se está disponivel ");
+if (estoque == 1) {
+System.out.println("Livro emprestado, o estoque agora é 0");
+estoque = estoque - 1;
+}
+} if (t == 2) {
+if (estoque == 0) {
+System.out.println("Livro devolvido!!");
+estoque = estoque+1;
+}} if (t == 3) {
+System.out.println("O estoque do livro é: " + estoque);
+}}} 
