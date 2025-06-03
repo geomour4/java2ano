@@ -1,0 +1,137 @@
+1 -
+package Atividade;
+import java.util.Scanner;
+public class main {
+public static void main(String[] args) {
+
+//Faça um algoritmo que leia o nome, o sexo e o estado civil de uma pessoa. Caso sexo seja “F” e
+//estado civil seja “CASADA”, solicitar o tempo de casada (anos).
+		    	
+Scanner tec = new Scanner(System.in);
+		
+int sexo;
+int civil;
+int alternativa;
+		
+System.out.println("Entre com o seu nome: ");
+String nome = tec.nextLine();
+		
+System.out.println("Digite 1 para feminino, Digite 2 para masculino");
+sexo = tec.nextInt();
+
+if (sexo == 1) {
+System.out.println("Ola " + nome + " seu sexo e feminino");
+nome = tec.nextLine();
+
+} else if(sexo == 2){
+System.out.println("Ola " + nome + " seu sexo e masculino");
+nome = tec.nextLine();
+		
+}
+else{
+System.out.println("Nao temos essa opcao");
+}
+	
+System.out.println("Digite 1 para Casada(o), Digite 2 para Solteira(o)");
+alternativa = tec.nextInt();
+
+if (alternativa == 1) {
+System.out.println("Me  informe o seu tempo de casada(o)");
+civil = tec.nextInt();
+		
+} else if(alternativa == 2){
+System.out.println("Ta lasca essa vida de solteiro ne");
+civil = tec.nextInt();
+	
+}
+else{
+System.out.println("Nao temos essa opcao");
+}	}}
+
+2 -
+package Atividade;
+import java.util.Scanner;
+public class atv2 {
+	
+Scanner tec = new Scanner(System.in);
+
+public void atv2() {
+System.out.println("Insira o valor de 1");
+int v1 = tec.nextInt();
+	      
+System.out.println("Insira o valor de 2");
+int v2 = tec.nextInt();
+	      
+if (v1 == v2) {
+int v3 = v1+v2;
+System.out.println("o valor 3 e: " +v3);
+	   
+} else {
+int v3 = v1*v2;
+System.out.println("o valor 3 e: " +v3);
+			 
+}}}
+3 -
+package Atividade;
+import java.util.Scanner;
+public class atv3 {
+	
+Scanner tec = new Scanner(System.in);
+	 
+public void atv3() {
+	
+System.out.println("Qual seu peso");
+double peso = tec.nextDouble();
+System.out.println("Qual sua altura");
+double altura = tec.nextDouble();
+     
+double imc = peso/(altura*altura);
+    
+if (imc < 18.5) {
+System.out.println("Você está abaixo do peso");
+}if ((imc > 18.5) && (imc <= 25)) {
+System.out.println("Você está no peso normal");
+}if ((imc > 25) && (imc <= 30)) {
+System.out.println("Você está acima do peso");
+}if (imc > 30) {
+System.out.println("Você está obeso");
+}}}
+
+4 -
+package Atividade;
+import java.util.Scanner;
+public class atv4 {
+
+Scanner tec = new Scanner(System.in);
+	 
+public void atv4() {
+			
+Scanner tec = new Scanner(System.in);
+			
+System.out.println("Insira o nome do produto");
+String nome = tec.nextLine();
+System.out.println("Qual o valor de etiqueta do produto");
+double preco = tec.nextDouble();
+System.out.println("Metodo de pagamento:\n1- A vista em dinheiro \n2- A vista em cartão \n3- Em duas vezes \n4- Em duas vezes, com juros");
+int alternativa = tec.nextInt();
+			
+if (alternativa == 1) {
+double total = preco-(preco*0.10);
+System.out.println("O valor ficou: "+ total+" reais.");
+}
+if (alternativa == 2) {
+double total = preco-(preco*0.15);
+System.out.println("O valor total ficou: "+ total+" reais.");
+}
+if (alternativa == 3) {
+double total = preco;
+System.out.println("O valor sem nenhum acrescimo ou desconto ficou: "+ total+" reais.");
+}
+if (alternativa == 4) {
+double total = preco+(preco*0.10);
+System.out.println("O valor com juros de 10 porcento ficou: "+ total+" reais.");
+}
+		         
+else {
+System.out.println("Nao temos essa opcao");
+}}} 
