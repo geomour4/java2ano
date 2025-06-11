@@ -1,0 +1,152 @@
+MAIN
+package Main;
+import java.util.Scanner;
+public class Main {
+
+public static void main(String[] args) {}
+public void escolha() {
+Scanner tec = new Scanner(System.in);			
+
+System.out.println("EMPRESA SAXUM");
+System.out.println("1 - Cadastrar Cliente");
+System.out.println("2 - Cadastrar Funcionário");
+System.out.println("3 - Cadastrar Produto");
+
+int o = tec.nextInt();
+if (o == 1) {
+Cliente texto1 = new Cliente();
+texto1.Cli();
+}
+
+else if (o == 2) {
+}
+else if (o == 3) {
+}
+else {
+}}}
+CLIENTE
+package atividade1;
+import java.util.Scanner;
+public class Cliente {
+	
+private String nome;
+private String email;
+private String endereco;
+private String telefone;
+private String cpf;
+private String cnpj;
+private String rzsoci;
+private Object produto;
+private Object fornecedor;
+
+public void Cli() {
+Scanner tec = new Scanner(System.in);
+	
+System.out.println("CADASTRO CLIENTE"); 
+	
+System.out.println("insira seu nome: ");
+String nome = tec.nextLine();
+System.out.println("insira sua email: ");
+String email = tec.nextLine();
+System.out.println("insira sua endereço: ");
+String endereco = tec.nextLine();
+System.out.println("insira seu telefone: ");
+String telefone = tec.nextLine();
+System.out.println("insira seu CPF: ");
+String cpf = tec.nextLine();
+System.out.println("insira seu CNPJ: ");
+String cnpj = tec.nextLine();
+System.out.println("insira sua razão social: ");
+String rzsoci = tec.nextLine();	
+	
+Ptrodutos texto1 = new Ptrodutos();
+texto1.prod();
+}}
+OS
+package atividade1;
+public class os {
+
+public void ordem(String nome, int i) {
+System.out.println("Sua Ordem de Serviço é: "+i);
+if (i == 1) {
+System.out.println("Produto adquirido!");
+} else {
+System.out.println("FILA...");
+}}}
+FUNCIONARIO
+package atividade1;
+import java.util.Scanner;
+public class funcionario {
+
+private String nomef;
+private String email;
+private String endereco;
+private String cargo;
+private int salario;
+private String telefone;
+private String cpff;
+	
+public void fun() {
+Scanner tec = new Scanner(System.in);
+
+System.out.println("CADASTRO FUNCIONARIO"); 
+		
+System.out.println("insira seu nome: ");
+this.nomef = tec.nextLine();
+System.out.println("insira seu email: ");
+String email = tec.next();
+System.out.println("insira seu CPF: ");
+this.cpff = tec.nextLine();
+System.out.println("insira seu endereço: ");
+String endere = tec.nextLine();
+System.out.println("insira seu cargo: ");
+String cargo = tec.nextLine();
+System.out.println("insira seu salario: ");
+int salario = tec.nextInt();
+System.out.println("insira seu folga: ");
+String folga = tec.nextLine();
+	
+valores text1 = new valores();
+text1.val(this.cpff, this.nomef, this.salario);
+}}
+VALORES
+package atividade1;
+import java.util.Scanner;
+public class valores {
+	
+public void val(String cpff, String nomef, int salario2) {
+    	   
+Scanner tec = new Scanner(System.in);
+System.out.println("Agora, vamos calcular o valor de seu salário");
+int sal = 0;
+double dia = sal/30;
+
+double salario = dia * (30-dia);
+System.out.println("O salário total de "+nomef+" teve um salário de "+salario);
+}}
+PRODUTO
+package atividade1;
+import java.util.Scanner;
+public class Ptrodutos {
+	
+private String produto;
+private String fornecedor;
+private int vlr;
+private int ID;
+	
+public void prod() {
+Scanner tec = new Scanner(System.in);
+
+System.out.println("CADASTRO DE PPRODUTOS"); 
+		
+System.out.println("Adicione seu produto: ");
+this.produto = tec.nextLine(); 
+System.out.println("insira seu fornecedor: ");
+this.fornecedor = tec.nextLine();
+System.out.println("insira o valor do produto: ");
+int vlr = tec.nextInt();
+System.out.println("insira o ID do seu produto: ");
+int ID = tec.nextInt();		
+		
+System.out.println("o seu produto: "+produto+"do valor: "+vlr+"com o fornecedor: "+fornecedor+"Seu ID é:"+ID);
+}}
