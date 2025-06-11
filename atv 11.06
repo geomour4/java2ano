@@ -1,0 +1,129 @@
+package atv;
+import java.util.Scanner;
+public class Main {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub 	
+Scanner tec = new Scanner(System.in);		
+
+System.out.println("Recepção");
+System.out.println("1 - Cadastrar Animal");
+System.out.println("2 - Cadastrar Dono");
+System.out.println("3 - Cadastrar Médico Veterinário");
+System.out.println("4 - Registrar Consulta");
+
+int o = tec.nextInt();
+if (o == 1) {
+Dono texto1 = new Dono();
+texto1.Don();
+}
+
+else if (o == 2) {
+
+}
+
+else if (o == 3) {
+
+}
+
+else if (o == 4) {
+
+}
+
+else {
+}}}.
+package atv;
+import java.util.Scanner;
+public class Dono {
+private String nomeDono;
+private String cpf;
+private String telefone;
+
+public void Don() {
+int cpf = 0;
+	
+Scanner tec = new Scanner (System.in);	
+	
+System.out.println("Qual o nome?");	
+this.nomeDono = tec.nextLine();
+
+try {
+System.out.println("cpf:");
+this.cpf = tec.nextInt();
+System.out.println("Telefone:");
+telefone = tec.nextLine();
+telefone = tec.nextLine();
+
+Animal text1 = new Animal();
+text1.Animal(this.cpf, this.nomeDono);
+} catch (Exception e) {
+System.out.println("Valores invalidos");
+}}}
+package atv;
+import java.util.Scanner;
+public class Animal {
+	
+private String nomeAnimal;
+private int idade;
+private String especie;
+private String chave;
+private String racaAnimal;
+private double peso;
+	
+
+public void Ani(String cpf,String nomeDono) {
+
+Scanner tec = new Scanner (System.in);
+
+System.out.println("Nome do animal");
+String nomeAnimal = tec.nextLine();
+
+System.out.println("Adicione a idade do animal: ");
+this.idade = tec.nextInt();
+
+System.out.println("Adicione a especie do animal:  ");
+String especie = tec.nextLine();
+
+System.out.println("Coloque uma palavra chave para seu pet: ");
+String chave = tec.nextLine();
+
+System.out.println("Adicione a raça do animal: ");
+String racaAnimal = tec.nextLine();
+
+System.out.println("Adicione o peso do animal: ");
+this.peso = tec.nextInt();	
+
+try {
+System.out.println("Confirme o cpf do dono:");
+int cpf = tec.nextInt();
+if (cpf == cpf) {
+VeteriMedic text2 = new VeteriMedic();
+text2.con(this.nomeAnimal, this.idade, cpf, nomeDono);
+} else {
+System.out.println("CPF não corresponde."); 
+}
+
+} catch (Exception e) {
+System.out.println("CPF invalido, precisa ser em valores númericos");		}
+}}
+package atv;
+import java.util.Scanner;
+public class VeteriMedic {
+private String especialidade;
+private String data;
+
+public void main(String nomeAnimal, int idade,String cpf,String nomeDono){
+
+Scanner tec = new Scanner(System.in);
+
+System.out.println("Qual a especialide desejada?");
+this.especialidade = tec.nextLine();
+
+System.out.println("Data da consulta:");
+this.data = tec.nextLine();
+
+System.out.println("Insira a palavra chave do pet: ");
+consulta chave = new consulta();
+
+text2.consulta(nomeAnimal,idade, cpf, nomeDono, this.especialidade, this.data);
+}}
