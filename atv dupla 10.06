@@ -127,7 +127,7 @@ System.out.println("O salário total de "+nomef+" teve um salário de "+salario)
 PRODUTO
 package atividade1;
 import java.util.Scanner;
-public class Ptrodutos {
+public class Produtos {
 	
 private String produto;
 private String fornecedor;
