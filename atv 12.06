@@ -1,0 +1,148 @@
+1 - 
+package atividade;
+import java.util.Scanner;
+public class CS {
+public static Scanner input = new Scanner(System.in);
+	
+private static double salario, valorImposto, valorGratificacao, salarioFinal;
+
+public static void informarSalario() {
+
+System.out.println("Adicione o seu salário?");
+try {
+slr = input.nextDouble();
+} catch (Exception e) {
+System.out.println("Insira um valor válido.");
+}
+		
+CS();
+}
+	
+public static void calcularSalario() {
+valorGratificacao = slr * 0.08;
+		
+if (slr > 3000) {
+valorImposto = slr * 0.11;
+} else if (slr > 1500) {
+valorImposto = slr * 0.05;
+}
+salarioFinal = slr + valorGratificacao - valorImposto;
+		
+System.out.println("Seu salário final foi: " + salarioFinal + "\n Gratificação de: R$" 
++ valorGratificacao + "\n Imposto: R$" + valorImposto + "\n ");
+}}
+
+2 -
+public void lan() {
+Scanner tec = new Scanner(System.in);
+
+System.out.println("coloque o seu nome");
+
+String nome = tec.next();
+
+System.out.println("digite:\n 1- xerox,\n 2- impressão,\n 3- manutenção");
+
+int [] escolha = new int [4];
+
+System.out.println("coloque o que deseja");
+
+escolha [0] = tec.nextInt();
+
+System.out.println("quer comprar outra coisa, sim ou não");
+
+String com2 = tec.next();
+
+if (com2.toLowerCase().equals("sim")) {
+
+System.out.println("digite o que vc quer");
+
+escolha [1] = tec.nextInt();
+
+System.out.println("compra realizada ");
+
+} else {
+
+System.out.println( nome +"compra realizada");
+
+}
+
+System.out.println("cliente 2");
+
+System.out.println("coloque o seu nome ");
+
+String nome2 = tec.next();
+
+System.out.println("digite:\n 1- xerox,\n 2- impressão,\n 3- manutenção");
+
+System.out.println("coloque o que deseja");
+
+escolha [2] = tec.nextInt();
+
+System.out.println("quer comprar outra coisa, sim ou não");
+
+String com3 = tec.next();
+
+if (com3.toLowerCase().equals("sim")) {
+
+System.out.println("digite o que vc quer");
+
+escolha [3] = tec.nextInt();
+
+} else {
+
+System.out.println( nome2 +"compra realizada");
+
+}
+
+
+
+if (escolha [0] == 1 && escolha [1] == 1 && escolha [2] == 1 && escolha [3] == 1) {
+
+	System.out.println("clientes: "+ nome+","+ nome2);
+
+	System.out.println("xerox: 4");
+
+	System.out.println("impressão: 0");
+
+	System.out.println("manutenção: 0");
+
+}
+
+if (escolha [0] == 2 && escolha [1] == 2 && escolha [2] == 2 && escolha [3] == 2) {
+
+	System.out.println("clientes: "+ nome+","+ nome2);
+
+	System.out.println("xerox: 0");
+
+	System.out.println("impressão: 4");
+
+	System.out.println("manutenção: 0");
+
+}
+
+if (escolha [0] == 3 && escolha [1] == 3 && escolha [2] == 3 && escolha [3] == 3) {
+
+	System.out.println("clientes: "+ nome+","+ nome2);
+
+	System.out.println("xerox: 0");
+
+	System.out.println("impressão: 0");
+
+	System.out.println("manutenção: 4");
+}}}
+
+3 -
+public void fam() {
+int [] familia = new int [11];
+Scanner tec = new Scanner(System.in);
+		
+for(int i = 1; i<11; i ++) {
+System.out.println("Quantas pessoas tem a família?");
+familia[i] = tec.nextInt();
+}
+for (int i = 0; i < 10; i ++) {
+if (familia[i] > 5)
+System.out.println("Família " + i + " tem mais de 5 pessoas.");
+}}}
+
+4 -
