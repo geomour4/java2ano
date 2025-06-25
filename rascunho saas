@@ -1,0 +1,81 @@
+Atividade
+- inicio.java
+
+package atividade;
+import views.home;
+public class inicio {
+
+public static void main(String[] args) {
+	   
+System.out.println("Bem Vindo(a)");
+home tec = new home();
+tec.IrParaCad();
+}}
+
+Views
+- cadusuario.java
+
+package views;
+import java.util.Scanner;
+import categoria.produtos;
+public class cadusuario {
+	
+public void cad(){
+Scanner tec = new Scanner(System.in);
+       
+System.out.println("Insira seu Nome");
+String nome = tec.nextLine();
+System.out.println("Insira seu Email");
+String email = tec.nextLine();
+        
+        
+System.out.println("Insira sua Senha");
+int senha = tec.nextInt();
+        
+try {
+System.out.println("Confirme sua senha:");
+int senha1 = tec.nextInt();
+if (senha1 == senha) {
+                  
+} else {
+System.out.println("Senha não corresponde."); 
+}
+} catch (Exception e) {
+System.out.println("Senha invalido, precisa ser em valores númericos");		
+   }    
+System.out.println("Cadastrado(a) com sucesso!");
+        
+produtos tlgd = new  produtos();
+tlgd.pord(); 
+}}
+
+- home.java
+package views;
+import java.util.Scanner;
+import views.cadusuario;
+public class home {
+		
+Scanner tec = new Scanner(System.in);
+
+public  void IrParaCad(){
+	    	
+System.out.println("Antes de tudo me diga o que voce e:\n 1- ADM \n 2- Usuario");	
+int o = tec.nextInt();
+	    
+if (o == 1) {
+System.out.println("Ainda estamos em andamento");
+}
+
+else if (o == 2) {
+cadusuario tec = new cadusuario();
+tec.cad();
+}
+	    
+else {
+System.out.println("Insira um valor valido");
+}}}
+
+- listusuario.java
+
+categoria
+- produtos.java
