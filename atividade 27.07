@@ -1,5 +1,42 @@
 1 -
+double[] notas = new double[2];
+
+System.out.println("Digite a nota 1:");
+notas[0] = tec.nextDouble();
+System.out.println("Digite a nota 2:");
+notas[1] = tec.nextDouble();
+
+System.out.println(nome);
+System.out.println(notas[0]);
+System.out.println(notas[1]);      	
+}}
+
 2 -
+package arrays;
+
+public class Atv {
+	
+public static void main(String[] args) {
+Scanner tec = new Scanner(System.in);
+
+public void ques2() {
+
+double[] nota = new double[2];
+	  
+System.out.println("Informe o nome do aluno:");
+String nome = tec.nextLine();
+System.out.println("insira a primeira nota:");
+nota[0] = tec.nextDouble();
+System.out.println("insira a segunda nota:");
+nota[1] = tec.nextDouble();
+	
+
+System.out.println(nome);
+System.out.println(nota[0]);
+System.out.println(nota[1]);
+}}	
+
 3 -
+
 4 -
 5 -
