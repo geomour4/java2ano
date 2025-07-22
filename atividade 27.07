@@ -1,27 +1,9 @@
 1 -
-double[] notas = new double[2];
-
-System.out.println("Digite a nota 1:");
-notas[0] = tec.nextDouble();
-System.out.println("Digite a nota 2:");
-notas[1] = tec.nextDouble();
-
-System.out.println(nome);
-System.out.println(notas[0]);
-System.out.println(notas[1]);      	
-}}
-
-2 -
 package arrays;
-
 public class Atv {
 	
 public static void main(String[] args) {
 Scanner tec = new Scanner(System.in);
-
-public void ques2() {
-
-double[] nota = new double[2];
 	  
 System.out.println("Informe o nome do aluno:");
 String nome = tec.nextLine();
@@ -30,13 +12,128 @@ nota[0] = tec.nextDouble();
 System.out.println("insira a segunda nota:");
 nota[1] = tec.nextDouble();
 	
-
 System.out.println(nome);
 System.out.println(nota[0]);
 System.out.println(nota[1]);
+
+System.out.println("As notas do Aluno: "+ nome[0] +" são:  "+ notas[0] +" e "+notas[1]);	
 }}	
+2 -
+package arrays;
+public class Atv {
+	
+public static void main(String[] args) {
+Scanner tec = new Scanner(System.in);
+double[] nota = new double[2];
 
+System.out.println("Informe o nome do aluno:");
+String nome = tec.nextLine();
+System.out.println("insira a primeira nota:");
+nota[0] = tec.nextDouble();
+System.out.println("insira a segunda nota:");
+nota[1] = tec.nextDouble();
+		
+System.out.println(nome);
+System.out.println(nota[0]);
+System.out.println(nota[1]);	  
+}}	
 3 -
+package arrays;
+public class Atv {
+	
+public static void main(String[] args) {
+Scanner tec = new Scanner(System.in);
 
+int[] turma= new int [5]; 
+String[] nome= new String [5]; 
+
+System.out.println("insira o seu nome");
+nome [0]= tec.next();
+System.out.println("insira a sua turma");
+turma [0] = tec.nextInt();
+
+System.out.println("insira o seu nome");
+nome [1]= tec.next();
+System.out.println("insira a sua turma");
+turma [1] = tec.nextInt();
+
+System.out.println("insira o seu nome");
+nome [2]= tec.next();
+System.out.println("insira a sua turma");
+turma [2] = tec.nextInt();
+
+System.out.println("insira o seu nome");
+nome [3]= tec.next();
+System.out.println("insira a sua turma");
+turma [3] = tec.nextInt();
+
+System.out.println("insira o seu nome");
+nome [4]= tec.next();
+System.out.println("insira a sua turma");
+turma [4] = tec.nextInt();
+
+System.out.println("nome:" + nome [0] +"é da turma " + turma [0]);
+System.out.println("nome:" + nome [1] +"é da turma " + turma [1]);
+System.out.println("nome:" + nome [2] +"é da turma " + turma [2]);
+System.out.println("nome:" + nome [3] +"é da turma " + turma [3]);
+System.out.println("nome:" + nome [4] +"é da turma " + turma [4]);
+}}
 4 -
+package arrays;
+public class Atv {
+	
+public static void main(String[] args) {
+Scanner tec = new Scanner(System.in);
+
+int[] turma= new int [5]; 
+String[] nome= new String [5];
+int [] nota =  new int [10];
+System.out.println("insira o seu nome");
+nome [0]= tec.next();
+System.out.println("insira o numero da sua turma");
+turma [0] = tec.nextInt();
+System.out.println("insira a sua primeira  nota ");
+nota [0]= tec.nextInt();
+System.out.println("insira a sua segunda  nota ");
+nota [1]= tec.nextInt();
+System.out.println("insira o seu nome");
+nome [1]= tec.next();
+System.out.println("insira o numero da sua turma");
+turma [1] = tec.nextInt();
+System.out.println("insira a sua primeira  nota ");
+nota [2]= tec.nextInt();
+System.out.println("insira a sua segunda  nota ");
+nota [3]= tec.nextInt();
+System.out.println("insira o seu nome");
+nome [2]= tec.next();
+System.out.println("insira o numero da sua turma");
+turma [2] = tec.nextInt();
+System.out.println("insira a sua primeira  nota ");
+nota [4]= tec.nextInt();
+System.out.println("insira a sua segunda  nota ");
+nota [5]= tec.nextInt();
+System.out.println("insira o seu nome");
+nome [3]= tec.next();
+System.out.println("insira o numero da sua turma");
+turma [3] = tec.nextInt();
+System.out.println("insira a sua primeira  nota ");
+nota [6]= tec.nextInt();
+System.out.println("insira a sua segunda  nota ");
+nota [7]= tec.nextInt();
+System.out.println("insira o seu nome");
+nome [4]= tec.next();
+System.out.println("insira o numero da sua turma");
+turma [4] = tec.nextInt();
+System.out.println("insira a sua primeira  nota ");
+nota [8]= tec.nextInt();
+System.out.println("insira a sua segunda  nota ");
+nota [9]= tec.nextInt();
+
+
+System.out.println("o aluno " + nome [0] +"é da turma " + turma [0]+ "suas notas foram " + nota [0]+ "e " + nota [1]);
+System.out.println("o aluno " + nome [1] +"é da turma " + turma [1]+ "suas notas foram " + nota [2]+ "e " + nota [3]);
+System.out.println("o aluno " + nome [2] +"é da turma " + turma [2]+ "suas notas foram " + nota [4]+ "e " + nota [5]);
+System.out.println("o aluno " + nome [3] +"é da turma " + turma [3]+ "suas notas foram " + nota [6]+ "e " + nota [7]);
+System.out.println("o aluno " + nome [4] +"é da turma " + turma [4]+ "suas notas foram " + nota [8]+ "e " + nota [9]);
+}}
 5 -
